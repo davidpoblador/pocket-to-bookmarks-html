@@ -1,6 +1,6 @@
 [project]
 name = "pocket-to-bookmarks-html"
-version = "0.1.7"
+version = "0.2.1"
 authors = [{ name = "David Poblador i Garcia" }]
 description = "A pocket to bookmarks.html converter"
 readme = "README.md"
@@ -22,28 +22,9 @@ Issues = "https://github.com/davidpoblador/pocket-to-bookmarks-html/issues"
 
 [tool.uv]
 dev-dependencies = [
-    "bump-my-version>=0.27.0",
     "twine>=5.1.1",
 ]
 package = false
 
 [project.scripts]
 pocket2bookmarks = "pocket_to_bookmarks_html:main"
-
-[tool.bumpversion]
-current_version = "0.1.8"
-parse = "(?P<major>\\d+)\\.(?P<minor>\\d+)\\.(?P<patch>\\d+)"
-serialize = ["{major}.{minor}.{patch}"]
-search = "{current_version}"
-replace = "{new_version}"
-regex = false
-ignore_missing_version = false
-tag = true
-sign_tags = false
-tag_name = "v{new_version}"
-tag_message = "Bump version: {current_version} → {new_version}"
-allow_dirty = false
-commit = true
-message = "Bump version: {current_version} → {new_version}"
-commit_args = ""
-
