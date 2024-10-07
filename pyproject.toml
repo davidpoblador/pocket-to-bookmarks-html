@@ -1,0 +1,7 @@
+[project]
+name = "pocket-to-bookmarks-html"
+version = "0.1.0"
+description = "A pocket to bookmarks.html converter"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["beautifulsoup4>=4.12.3"]
