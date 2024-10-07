@@ -1,6 +1,6 @@
 [project]
 name = "pocket-to-bookmarks-html"
-version = "0.1.1"
+version = "0.1.2"
 authors = [{ name = "David Poblador i Garcia" }]
 description = "A pocket to bookmarks.html converter"
 readme = "README.md"
