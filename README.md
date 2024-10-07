@@ -1,6 +1,6 @@
-# Pocket-to-Bookmarks Converter
+# Pocket-to-Bookmarks HTML Converter
 
-This Python script converts a Pocket export HTML file to a standard bookmarks file format. It extracts links from your Pocket export and creates a new HTML file compatible with most web browsers' bookmark import features.
+This Python package converts a Pocket export HTML file to a standard bookmarks file format. It extracts links from your Pocket export and creates a new HTML file compatible with most web browsers' bookmark import features.
 
 ## Features
 
@@ -12,24 +12,23 @@ This Python script converts a Pocket export HTML file to a standard bookmarks fi
 
 ## Requirements
 
-- Python 3.6+
+- Python 3.9+
 - BeautifulSoup4
 
 ## Installation
 
-1. Clone this repository or download the `pocket-to-bookmarks-html.py` file.
-2. Install the required dependencies:
+You can install the package using pip:
 
 ```
-pip install beautifulsoup4
+pip install pocket-to-bookmarks-html
 ```
 
 ## Usage
 
-Run the script from the command line, providing the input Pocket export file and the desired output file name:
+After installation, you can run the script from the command line using:
 
 ```
-python pocket-to-bookmarks-html.py input_pocket_export.html output_bookmarks.html
+pocket2bookmarks input_pocket_export.html output_bookmarks.html
 ```
 
 Replace `input_pocket_export.html` with the path to your Pocket export file, and `output_bookmarks.html` with your desired output file name.
@@ -54,9 +53,27 @@ The script uses Python's logging module to provide information about the convers
 - Any errors encountered during file operations
 - A warning if no links were found or processed
 
+## Development
+
+To set up the development environment:
+
+1. Clone the repository:
+
+   ```
+   git clone https://github.com/davidpoblador/pocket-to-bookmarks-html.git
+   cd pocket-to-bookmarks-html
+   ```
+
+2. Install development dependencies:
+
+   ```
+   pip install uv
+   uv sync
+   ```
+
 ## Contributing
 
-Contributions, issues, and feature requests are welcome. Feel free to check [issues page](link-to-your-issues-page) if you want to contribute.
+Contributions, issues, and feature requests are welcome. Feel free to check the [issues page](https://github.com/davidpoblador/pocket-to-bookmarks-html/issues) if you want to contribute.
 
 ## License
 
