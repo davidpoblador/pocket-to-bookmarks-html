@@ -31,14 +31,14 @@ package = false
 pocket2bookmarks = "pocket_to_bookmarks_html:main"
 
 [tool.bumpversion]
-current_version = "0.1.3"
+current_version = "0.1.4"
 parse = "(?P<major>\\d+)\\.(?P<minor>\\d+)\\.(?P<patch>\\d+)"
 serialize = ["{major}.{minor}.{patch}"]
 search = "{current_version}"
 replace = "{new_version}"
 regex = false
 ignore_missing_version = false
-tag = false
+tag = true
 sign_tags = false
 tag_name = "v{new_version}"
 tag_message = "Bump version: {current_version} → {new_version}"
