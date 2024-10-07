@@ -1,7 +1,24 @@
 [project]
 name = "pocket-to-bookmarks-html"
-version = "0.1.0"
+version = "0.1.1"
+authors = [{ name = "David Poblador i Garcia" }]
 description = "A pocket to bookmarks.html converter"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.9"
 dependencies = ["beautifulsoup4>=4.12.3"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+
+
+[project.urls]
+Homepage = "https://github.com/davidpoblador/pocket-to-bookmarks-html"
+Issues = "https://github.com/davidpoblador/pocket-to-bookmarks-html/issues"
+
+[tool.uv]
+dev-dependencies = ["twine>=5.1.1"]
